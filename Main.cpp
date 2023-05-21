@@ -10,7 +10,10 @@ int rng() {
 }
 
 int getInput() {
-    std::vector<int> validNumbers{ 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 };
+    std::vector<int> validNumbers;
+for (int i = 0; i <= 15; i++) {
+    validNumbers.push_back(i);
+} // Defines the valid numbers that can be used in the program, 1 -15.
     int guess;
     bool valid = false;
     while (!valid) {
